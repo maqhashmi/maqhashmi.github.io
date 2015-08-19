@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mohammed Hashmi's personal website">
+    <meta name="author" content="Mohammed Hashmi">
+    <link rel="shortcut icon" href="assets/img/favicon.png">
+
+    <title>Mohammed Hashmi - Coming Soon!</title>
+
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+	<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+	<div id="wrapper">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 col-md-12 col-lg-12">
+					<h1>Mohammed Hashmi</h1>
+					<h2 class="subtitle">Coming soon!</h2>
+					<div id="countdown"></div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col-lg-6 col-lg-offset-3">
+						<p class="copyright">Copyright &copy; 2015 - <a href="mailto:mrmaq9@gmail.com">Mohammed Hashmi</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/jquery.countdown.min.js"></script>
+	<script type="text/javascript">
+  $('#countdown').countdown('2015/09/14', function(event) {
+    $(this).html(event.strftime('<br />%w weeks %d days <br /> %H:%M:%S'));
+  });
+</script>
+  </body>
+</html>
