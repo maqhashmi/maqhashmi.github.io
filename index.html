@@ -1,46 +1,614 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>Egret - HTML5 landing page</title>
+
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mohammed Hashmi's personal website">
-    <meta name="author" content="Mohammed Hashmi">
-    <link rel="shortcut icon" href="assets/img/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap.css" />
+	<link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/linea-icon.css" />
+	<link rel="stylesheet" href="css/fancy-buttons.css" />
 
-    <title>Mohammed Hashmi - Coming Soon!</title>
+	<!--=== Google Fonts ===-->
+	<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<!--=== Other CSS files ===-->
+	<link rel="stylesheet" href="css/animate.css" />
+	<link rel="stylesheet" href="css/jquery.vegas.css" />
+	<link rel="stylesheet" href="css/baraja.css" />
+	<link rel="stylesheet" href="css/jquery.bxslider.css" />
 
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-	<link href="assets/css/bootstrap-theme.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
-  </head>
+	<!--=== Main Stylesheets ===-->
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/responsive.css" />
 
-  <body>
+	<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
+	<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
 
-	<div id="wrapper">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-md-12 col-lg-12">
-					<h1>Mohammed Hashmi</h1>
-					<h2 class="subtitle">Coming soon!</h2>
-					<div id="countdown"></div>
+	<!--=== Internet explorer fix ===-->
+	<!-- [if lt IE 9]>
+		<script src="http://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="http://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif] -->
+
+
+</head>
+<body>
+	<!--=== Preloader section starts ===-->
+	<section id="preloader">
+		<div class="loading-circle fa-spin"></div>
+	</section>
+	<!--=== Preloader section Ends ===-->
+
+	<!--=== Header section Starts ===-->
+	<div id="header" class="header-section">
+		<!-- sticky-bar Starts-->
+		<div class="sticky-bar-wrap">
+			<div class="sticky-section">
+				<div id="topbar-hold" class="nav-hold container">
+					<nav class="navbar" role="navigation">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+							</button>
+							<!--=== Site Name ===-->
+							<!-- <a class="site-name navbar-brand" href="#"><span>E</span>gret</a> -->
+						</div>
+
+						<!-- Main Navigation menu Starts -->
+						<div class="collapse navbar-collapse navbar-responsive-collapse">
+							<ul class="nav navbar-nav navbar-right">
+								<li class="current"><a href="#header">Home</a></li>
+								<li><a href="#section-feature">About</a></li>
+								<li><a href="#section-projects">Projects</a></li>
+								<li><a href="#step-1">Experience</a></li>
+								<li><a href="#section-screenshots">Photography</a></li>
+								<!--<li><a href="#section-pricing">Pricing</a></li> -->
+
+							</ul>
+						</div>
+						<!-- Main Navigation menu ends-->
+					</nav>
 				</div>
+			</div>
+		</div>
+		<!-- sticky-bar Ends-->
+		<!--=== Header section Ends ===-->
+
+		<!--=== Home Section Starts ===-->
+		<div id="section-home" class="home-section-wrap center">
+			<div class="section-overlay"></div>
+			<div class="container home">
+				<div class="row">
+					<h1 class="well-come">Mohammed Hashmi</h1>
+
+					<div class="col-md-8 col-md-offset-2">
+						<p class="intro-message">Inventor, Hacker, Designer, Engineer, Embedded Systems Developer</p>
+						<!-- sticky-bar Ends
+						<div class="home-buttons">
+							<a href="#" class="fancy-button button-line button-white vertical">
+								Learn more
+								<span class="icon">
+									<i class="fa fa-gear"></i>
+								</span>
+							</a>
+							<a href="#" class="fancy-button button-line button-white zoom">
+								Download now
+								<span class="icon">
+									<i class="fa fa-leaf"></i>
+								</span>
+							</a>
+						</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--=== Home Section Ends ===-->
+	</div>
+
+
+	<!--=== Features section Starts ===-->
+	<section id="section-feature" class="feature-wrap">
+		<div class="container features center">
+			<div class="row">
+				<div class="col-lg-12">
+						<!--Features container Starts -->
+						<ul id="card-ul" class="features-hold baraja-container">
+
+							<!-- Single Feature Starts -->
+							<li class="single-feature" title="Inventor">
+								<img src="images/5.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+								<h4 class="feature-title color-scheme">Inventor</h4>
+								<p class="feature-text">
+									Invention doesn't necessarily have to be scientific. I believe invention to be the highest form of improvisation.
+								</p>
+
+							</li>
+							<!-- Single Feature Ends -->
+
+							<!-- Single Feature Starts -->
+							<li class="single-feature" title="Hacker">
+								<img src="images/2.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+								<h4 class="feature-title color-scheme">Hacker</h4>
+								<p class="feature-text">
+									Quality over quantity. I fend for simplicity and faster production = Hack
+								</p>
+
+							</li>
+							<!-- Single Feature Ends -->
+
+							<!-- Single Feature Starts -->
+							<li class="single-feature" title="Embedded systems developer">
+								<img src="images/3.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+								<h4 class="feature-title color-scheme">Embedded systems developer</h4>
+								<p class="feature-text">
+									To see what you have coded in the physical world and then subbing it back into the screens.
+								</p>
+
+							</li>
+							<!-- Single Feature Ends -->
+
+							<!-- Single Feature Starts -->
+							<li class="single-feature" title="Designer">
+								<img src="images/4.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+								<h4 class="feature-title color-scheme">Designer</h4>
+								<p class="feature-text">
+									I believe that good design is good business.
+								</p>
+
+							</li>
+
+							<!-- Single Feature Starts -->
+							<li class="single-feature" title="Engineer">
+								<img src="images/7.jpg" alt="" class="feature-image" /><!-- Feature Icon -->
+								<h4 class="feature-title color-scheme">Engineer</h4>
+								<p class="feature-text">
+									Working full time as IT support for my family. Unpaid overtime!
+								</p>
+
+							</li>
+							<!-- Single Feature Ends -->
+
+
+						</ul>
+						<!--Features container Ends -->
+
+						<!-- Features Controls Starts -->
+						<div class="features-control relative">
+							<button class="control-icon fancy-button button-line no-text btn-col bell" id="feature-prev" title="Previous" >
+								<span class="icon">
+									<i class="fa fa-arrow-left"></i>
+								</span>
+							</button>
+							<button class="control-icon fancy-button button-line no-text btn-col zoom" id="feature-expand" title="Expand" >
+								<span class="icon">
+									<i class="fa fa-expand"></i>
+								</span>
+							</button>
+							<button class="control-icon fancy-button button-line no-text btn-col zoom" id="feature-close" title="Collapse" >
+								<span class="icon">
+									<i class="fa fa-compress"></i>
+								</span>
+							</button>
+							<button class="control-icon fancy-button button-line no-text btn-col bell" id="feature-next" title="Next" >
+								<span class="icon">
+									<i class="fa fa-arrow-right"></i>
+								</span>
+							</button>
+						</div>
+						<!-- Features Controls Ends -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Features section Ends ===-->
+
+	<!--=== Projects header section Starts ===-->
+	<section id="section-projects-header" class="section-video-wrap">
+		<!-- <div class="section-overlay"></div> -->
+		<div class="container center animated" data-animation="fadeInLeft" data-animation-delay="100">
+			<div class="row">
+				<div class="col-md-12 section-title">
+					<h3>Projects</h3>
+				</div>
+			</div>
+		<!-- </div> -->
+	</section>
+	<!--=== Projects header section Ends ===-->
+
+	<!-- Projects section starts -->
+	<section id="section-projects" class="section-step step-wrap">
+		<div class="container step animated" data-animation="bounceInLeft" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-8 step-desc">
+					<div class="col-md-2 center">
+						<div class="step-no">
+							<span class="no-inner">1</span>
+						</div>
+					</div>
+
+					<div class="col-md-10 step-details">
+							<h3 class="step-title color-scheme"><strong>Lifeline - Winner of Season Finale hackathon (HTP)</strong> <br/> Mountain View, CA</h3>
+								An app where the smartwatch on your wrist measures your heart rate and stability, and triggers during an epileptic seizure notifying close relatives of the patient in danger (Pebble, MS band)
+					</div> <!-- End step-details -->
+				</div>
+				<!-- Step Description Ends -->
+				<div class="col-md-4 step-img">
+					<img src="images/lifeline.png" alt="" /> <!-- Step Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Step-1 section Ends ===-->
+
+	<!--=== Step-2 section Starts ===-->
+	<section id="step-2" class="section-step step-even step-wrap">
+		<div class="container step animated" data-animation="bounceInRight" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-8 step-desc">
+					<div class="col-md-2 center">
+						<div class="step-no">
+							<span class="no-inner">2</span>
+						</div>
+					</div>
+
+					<div class="col-md-10 step-details">
+							<h3 class="step-title color-scheme"><strong>M Hacks V</strong> </br>Ann Arbor, MI</h3
+							<p class="step-description">
+								VR Hack: A third party interface connector to prevent nuclear engineers from exposure to toxic radiation (Google lass, Myo)
+							</p>
+
+
+					</div><!-- End step-details -->
+				</div>
+				<!-- Step Description Ends -->
+				<div class="col-md-4 step-img">
+					<img src="images/vrhack.png" alt="" /> <!-- Step Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Project section ends  -->
+
+	<!--=== Work experience header section Starts ===-->
+	<section class="section-experience-header">
+		<!-- <div class="section-overlay"></div> -->
+		<div class="container center animated" data-animation="fadeInLeft" data-animation-delay="100">
+			<div class="row">
+				<div class="col-md-12 section-title">
+					<h3>Work Experience</h3>
+				</div>
+			</div>
+		<!-- </div> -->
+	</section>
+	<!--=== Work experience header section Ends ===-->
+
+
+	<!--=== Step-1 section Starts ===-->
+	<section id="step-1" class="section-step step-wrap">
+		<div class="container step animated" data-animation="bounceInLeft" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-8 step-desc">
+					<div class="col-md-2 center">
+						<div class="step-no">
+							<span class="no-inner">1</span>
+						</div>
+					</div>
+
+					<div class="col-md-10 step-details">
+							<h3 class="step-title color-scheme"><strong>Application Developer</strong> <br/> (May - August 2015)</h3>
+							<ul>
+							<p class="step-description"><li>Received an outstanding employer rating for single-handedly testing and developing scripts to use a third-party service in order to save company time and money<br/>
+							<li>Created test cases in JIVE for Ericsson products including AVM as well as integration, performance and regression testing</p>
+
+							</ul>
+					</div> <!-- End step-details -->
+				</div>
+				<!-- Step Description Ends -->
+				<div class="col-md-4 step-img">
+					<img src="images/note.png" alt="" /> <!-- Step Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Step-1 section Ends ===-->
+
+	<!--=== Step-2 section Starts ===-->
+	<section id="step-2" class="section-step step-even step-wrap">
+		<div class="container step animated" data-animation="bounceInRight" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-8 step-desc">
+					<div class="col-md-2 center">
+						<div class="step-no">
+							<span class="no-inner">2</span>
+						</div>
+					</div>
+
+					<div class="col-md-10 step-details">
+							<h3 class="step-title color-scheme"><strong>Software QA Specialist</strong> </br> (August - December 2014)</h3
+							<p class="step-description"><li>Awarded outstanding intern of the term for developing an internal tool for product management and development teams to selectively showcase data to the customers </li></br>
+							<li>Created an automation library to reuse existing test infrastructure across other platforms</li></p>
+
+
+					</div><!-- End step-details -->
+				</div>
+				<!-- Step Description Ends -->
+				<div class="col-md-4 step-img">
+					<img src="images/desk.png" alt="" /> <!-- Step Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Step-2 section Ends ===-->
+
+	<!--=== Step-3 section Starts ===-->
+	<section id="step-3" class="section-step step-wrap">
+		<div class="container step animated" data-animation="bounceInRight" data-animation-delay="700">
+			<div class="row">
+				<!-- Step Description Starts -->
+				<div class="col-md-8 step-desc">
+					<div class="col-md-2 center">
+						<div class="step-no">
+							<span class="no-inner">3</span>
+						</div>
+					</div>
+
+					<div class="col-md-10 step-details">
+							<h3 class="step-title color-scheme"><strong>Software Developer</strong> </br>(January - April 2014)</h3>
+							<p class="step-description"><li>Developed new features to code that keeps track of assets belonging to over 5000 users </li>
+							<li>Designed and developed .RPT crystal report files</li>
+							<li>Enhanced existing code by decreasing it without losing flexibility to the live application and corrected errors such as sporadic errors</li></p>
+
+
+					</div><!-- End step-details -->
+				</div>
+				<!-- Step Description Ends -->
+				<div class="col-md-4 step-img">
+					<img src="images/jawad.png" alt="" /> <!-- Step Photo Here -->
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Step-3 section Ends ===-->
+
+
+
+	<!--=== Video section Starts ===-->
+	<section id="section-video" class="section-video-wrap">
+		<div class="section-overlay"></div>
+		<div class="container big-video center animated" data-animation="fadeInLeft" data-animation-delay="700">
+			<div class="row">
+				<div class="col-md-12 section-title">
+					<h3>How I walk to my desk</h3>
+				</div>
+				<div class="col-md-10 col-md-offset-1 video-content">
+					<iframe height="360" width="640" frameborder="0" src="http://www.magisto.com/embed/aQUeZAgFRz0rUx5hCzE?l=vem&o=w&c=b"></iframe>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Video section Ends ===-->
+
+	<!--=== ScreenShots section Starts ===-->
+	<section id="section-screenshots" class="screenshots-wrap">
+		<div class="container screenshots animated" data-animation="fadeInUp" data-animation-delay="1000">
+			<div class="row porfolio-container">
+				<div class="col-md-10 col-md-offset-1 center section-title">
+					<h3>Part time photography</h3>
+				</div>
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/7.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Banff Cruise 2015</h4>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/2.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Lake Minnewanka</h4>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/3.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Sulphur Mountain Summit</h4>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/4.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Minnewanka Cruise 2015</h4>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/5.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Sulphur Mountain View</h4>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
+
+				<!-- Single screenshot starts -->
+				<div class="col-md-4 col-sm-4 col-xs-6">
+					<div class="screenshot">
+						<div class="photo-box">
+							<img src="images/6.jpg" alt="" />
+							<div class="photo-overlay">
+								<h4>Lake Minnewanka Hoodoo Tour</h4>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<!-- Single screenshot ends -->
 
 			</div>
+
+			<div id="portfolio-loader" class="center">
+				<div class="loading-circle fa-spin"></div>
+			</div> <!--=== Portfolio loader ===-->
+
+			<div id="portfolio-load"></div><!--=== ajax content will be loaded here ===-->
+
+			<div class="col-md-12 center back-button">
+				<a class="backToProject fancy-button button-line bell btn-col" href="#">
+					Back
+
+				</a>
+			</div><!--=== Single portfolio back button ===-->
+		</div>
+	</section>
+	<!--=== ScreenShots section Ends ===-->
+
+
+
+
+
+
+
+
+
+	<!--=== Contact section Starts ===-->
+	<section id="section-contact" class="contact-wrap">
+	<div class="section-overlay"></div>
+		<div class="container contact center animated" data-animation="flipInY" data-animation-delay="1000">
 			<div class="row">
-				<div class="col-lg-6 col-lg-offset-3">
-						<p class="copyright">Copyright &copy; 2015 - <a href="mailto:mrmaq9@gmail.com">Mohammed Hashmi</a></p>
+				<div class="col-md-8 col-md-offset-2">
+					<div class="col-md-10 col-md-offset-1 center section-title">
+						<h3>Leave a message</h3>
+					</div>
+
+					<div class="confirmation">
+						<p><span class="fa fa-check"></span></p>
+					</div>
+
+					<form class="contact-form support-form">
+
+						<div class="col-lg-12">
+							<input id="name" class="input-field form-item field-name" type="text" required="required" name="contact-name" placeholder="Name" />
+
+							<input id="email" class="input-field form-item field-email" type="email" required="required" name="contact-email" placeholder="Email" />
+
+							<input id="subject" class="input-field form-item field-subject" type="text" required="required" name="contact-subject" placeholder="Subject" />
+							<textarea id="message" class="textarea-field form-item field-message" rows="10" name="contact-message" placeholder="Message"></textarea>
+						</div>
+						<button type="submit" class="fancy-button button-line button-white large zoom subform">
+							Send message
+							<span class="icon">
+								<i class="fa fa-paper-plane-o"></i>
+							</span>
+						</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--=== Contact section Ends ===-->
+
+	<!--=== Footer section Starts ===-->
+	<div id="section-footer" class="footer-wrap">
+		<div class="container footer center">
+			<div class="row">
+				<div class="col-lg-12">
+					<!-- <h4 class="footer-title"><!-- Footer Title -->
+						<!-- <a class="site-name" href="#"><span>E</span>gret</a>
+					</h4> -->
+
+					<!-- Social Links -->
+					<div class="social-icons">
+						<ul>
+							<li><a href="https://www.facebook.com/maq.hashmi"><i class="fa fa-facebook-square"></i></a></li>
+							<li><a href="https://twitter.com/Maq_madridista7"><i class="fa fa-twitter-square"></i></a></li>
+							<li><a href="https://plus.google.com/u/0/+MohammedHashmiAbdulQadir/posts"><i class="fa fa-google-plus-square"></i></a></li>
+							<li><a href="https://instagram.com/maq7mohammed/"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="https://ca.linkedin.com/pub/mohammed-hashmi/87/150/45b"><i class="fa fa-linkedin-square"></i></a></li>
+						</ul>
+					</div>
+
+					<p class="copyright">Mohammed Hashmi &copy; 2015</p>
 				</div>
 			</div>
 		</div>
 	</div>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-	<script src="assets/js/jquery.countdown.min.js"></script>
-	<script type="text/javascript">
-  $('#countdown').countdown('2015/09/25', function(event) {
-    $(this).html(event.strftime('<br />%w weeks %d days <br /> %H:%M:%S'));
-  });
-</script>
-  </body>
+	<!--=== Footer section Ends ===-->
+
+<!--==== Js files ====-->
+<!--==== Essential files ====-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+
+<!--==== Slider and Card style plugin ====-->
+<script type="text/javascript" src="js/jquery.baraja.js"></script>
+<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+
+<!--==== MailChimp Widget plugin ====-->
+<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+
+<!--==== Scroll and navigation plugins ====-->
+<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="js/jquery.nav.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+
+<!--==== Custom Script files ====-->
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
 </html>
