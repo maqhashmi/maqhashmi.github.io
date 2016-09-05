@@ -1,14 +1,16 @@
-/* ----------------------------- 
+/* -----------------------------
 Pre Loader
 ----------------------------- */
 $(window).load(function() {
 	'use strict';
-	$('.loading-icon').delay(500).fadeOut();
-	$('#preloader').delay(800).fadeOut('slow');
+	// $('.loading-icon').delay(500).fadeOut();
+	// $('#preloader').delay(800).fadeOut('slow');
+	$('.loading-icon').fadeOut();
+	$('#preloader').fadeOut('slow');
 });
 
 
-/* ----------------------------- 
+/* -----------------------------
 Backgroung slider
 ----------------------------- */
 $(window).ready(function() {
@@ -189,33 +191,34 @@ $(document).ready(function() {
                 $('.back-button').fadeIn(600);
             });
         },400);
-		
-		
-		
+
+
+
 	});
-	
+
 	$('.backToProject').on('click', function(e){
 		e.preventDefault();
-		
+
 		var portfolioWrap	= $('.porfolio-container'),
 			contentLoaded 	= $('#portfolio-load');
-			
-		contentLoaded.animate({'left':'105%'},{duration:400,queue:false}).delay(300).fadeOut(400);
+
+		// contentLoaded.animate({'left':'105%'},{duration:400,queue:false}).delay(300).fadeOut(400);
+		contentLoaded.animate({'left':'105%'},{duration:400,queue:false}).fadeOut(400);
         $(this).parent().fadeOut(400);
 		setTimeout(function(){
             portfolioWrap.animate({'left':'0'},{duration:400,queue:false});
             portfolioWrap.fadeIn(600);
         },500);
-		
+
 	});
 
 });
 
 
-							
-/* ----------------------------- 
+
+/* -----------------------------
 BxSlider
------------------------------ */		
+----------------------------- */
 $(document).ready(function() {
 	'use strict';
 	$('.testimonial-slider').bxSlider({
@@ -253,12 +256,12 @@ $(document).ready(function() {
 		callback: mailchimpCallback,
 		url: 'YOUR_URL' /* Replace it with your custom URL inside '' */
 	});
-	
+
 	function mailchimpCallback(resp) {
 		 if(resp.result === 'success') {
 			$('.subscription-success')
 				.html(resp.msg)
-				.delay(500)
+				// .delay(500)
 				.fadeIn(1000);
 
 			$('.subscription-success').fadeOut(8000);
@@ -266,7 +269,7 @@ $(document).ready(function() {
 		} else if(resp.result === 'error') {
 			$('.subscription-failed')
 				.html(resp.msg)
-				.delay(500)
+				// .delay(500)
 				.fadeIn(1000);
 
 			$('.subscription-failed').fadeOut(5000);
