@@ -45,38 +45,38 @@ $(document).ready(function() {
 			}
 	});
 });
-	
 
-/* ----------------------------- 
+
+/* -----------------------------
 NiceScroll
------------------------------ */	
-$(document).ready(function() { 
+----------------------------- */
+$(document).ready(function() {
 	'use strict';
-    $("html").niceScroll({
-		cursorcolor: '#E74C3C',
-		cursoropacitymin: '1',
-		cursorborder: '0px',
-		cursorborderradius: '0px',
-		cursorwidth: '5px',
-		cursorminheight: 60,
-		horizrailenabled: false,
-		zindex: 1090
-	});
+    // $("html").niceScroll({
+	// 	cursorcolor: '#E74C3C',
+	// 	cursoropacitymin: '1',
+	// 	cursorborder: '0px',
+	// 	cursorborderradius: '0px',
+	// 	cursorwidth: '5px',
+	// 	cursorminheight: 60,
+	// 	horizrailenabled: false,
+	// 	zindex: 1090
+	// });
   });
 
 
 
 
-				
-/* ----------------------------- 
+
+/* -----------------------------
 Card Style Script
------------------------------ */					
+----------------------------- */
 $(document).ready(function() {
 	'use strict';
 	var $el 			= $( '#card-ul' ),
 		sectionFeature  = $('#section-feature'),
 		baraja 			= $el.baraja();
-	
+
 		if ( $(window).width() > 480) {
 			sectionFeature.appear(function(){
 				baraja.fan({
